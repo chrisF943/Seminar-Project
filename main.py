@@ -1,6 +1,5 @@
 import requests
 import datetime
-import os
 
 stock_url = "https://www.alphavantage.co/query"
 stock_key = "WDK56JX91HXK0CQ1"
@@ -25,10 +24,7 @@ for ticker in tickers:
 
 today = datetime.datetime.now().strftime("%m/%d/%Y")
 
-path = "/Users/chrisfaris/Desktop"
-filename = "stocks.txt"
-full_path = os.path.join(path, filename)
-with open(full_path, "a") as file:
+with open("/home/Chris943/stocks.txt", "a") as file:
     file.write(f"\n{today}\n")
     for value in values:
         file.write(f"{value}\n")
