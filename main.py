@@ -16,7 +16,11 @@ for ticker in tickers:
 
     response = requests.get(stock_url, params)
     response.raise_for_status()
-    data = response.json()["Time Series (Daily)"]
+    try:
+        data = response.json()["Time Series (Daily)"]
+    except KeyError as e:
+        print(f"API Error: {e}")
+        print(response.json())
     most_recent_date = max(data.keys())
     close_value = data[most_recent_date]["4. close"]
     values.append(f"{ticker}: {float(close_value)}")
