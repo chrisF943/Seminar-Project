@@ -2,7 +2,7 @@ import requests
 import datetime
 
 stock_url = "https://www.alphavantage.co/query"
-stock_key = "WDK56JX91HXK0CQ1"
+stock_key = ""
 
 tickers = ["IBM", "AAPl", "MSFT", "GOOGL", "ORCL"]
 values = []
