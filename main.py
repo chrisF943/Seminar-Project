@@ -4,7 +4,7 @@ import datetime
 stock_url = "https://www.alphavantage.co/query"
 stock_key = ""
 
-tickers = ["IBM", "AAPl", "MSFT", "GOOGL", "ORCL"]
+tickers = ["AAPl", "MSFT", "GOOGL", "AMZN"]
 values = []
 
 for ticker in tickers:
