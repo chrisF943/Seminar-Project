@@ -1,8 +1,10 @@
+import os
+
 import requests
 import datetime
 
 stock_url = "https://www.alphavantage.co/query"
-stock_key = ""
+stock_key = os.environ.get("API_KEY")
 
 tickers = ["AAPl", "MSFT", "GOOGL", "AMZN"]
 values = []
