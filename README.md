@@ -1,7 +1,7 @@
-# Stock Data Collection and Analysis
+# Collecting and Analyzing Stock Data with Python
 
-## Description
-This project automates the collection and analysis of daily closing prices for selected stock tickers using Python and cloud-based scheduling. The system fetches data from the AlphaVantage API and generates visualizations to track stock performance over time.
+## Overview
+Created for the Seminar in Advanced Software Development course, this project automates the collection and analysis of daily closing prices for selected stock tickers using Python and cloud-based scheduling. The system fetches data from the AlphaVantage API and generates visualizations to track stock performance over time.
 
 ---
 
@@ -17,45 +17,6 @@ This project automates the collection and analysis of daily closing prices for s
 3. **Historical Data Management:**
    - Stores historical data in text files for reference and further analysis.
    - Generates visual comparisons of stock performance over different time periods.
-
----
-
-## Prerequisites
-- **Python 3.x**: Ensure Python is installed on your system.
-- **AlphaVantage API Key**: Obtain a free API key from [AlphaVantage](https://www.alphavantage.co/support/#api-key).
-- **Python Libraries**: Install the following packages:
-  - `requests`
-  - `matplotlib`
-  - `schedule`
-  - `pandas`
-
----
-
-## Usage
-
-### Prepare the JSON File
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/chrisF943/Seminar-Project.git
-   cd Seminar-Project
-   ```
-
-2. **Install Required Packages:**
-   ```bash
-   pip install requests matplotlib schedule pandas
-   ```
-
-3. **Configure the API Key:**
-   - Replace `'YOUR_API_KEY'` in `main.py` with your actual AlphaVantage API key.
-
-4. **Run the Script:**
-   ```bash
-   python main.py
-   ```
-
-5. **Automate Execution (Optional):**
-   - Deploy the script on a cloud platform like PythonAnywhere.
-   - Set up a scheduled task to run `main.py` daily at 6 PM EST on trading days.
 
 ---
 
@@ -82,5 +43,10 @@ This project automates the collection and analysis of daily closing prices for s
 
 ---
 
-## Contact
-For further questions or feedback, please reach out to the project author via the GitHub repository: [chrisF943/Seminar-Project](https://github.com/chrisF943/Seminar-Project).
+## Video Presentation
+
+[Project Presentation](https://youtu.be/jG8ikQyUJII)
+
+---
+
+All materials used in presentation are available in this repository.
